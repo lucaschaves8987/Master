@@ -6,7 +6,7 @@ Background:
  And selecionar o botao abrir conta
 
 @pf
-  Scenario Outline: Abertura de conta pessoa fisica
+  Scenario Outline: Abertura de conta Aristides e Lucas
 And selecionar o botao abrir conta para voce
 #When preencher o formulario de abertura de conta
 And preencher campo com nome "<nome>"
@@ -21,13 +21,7 @@ Examples:
                       |samuel  |teste@teste.com.br|01422214060     |11111111111|
                       |joao    |teste@teste.com.br|27786240071     |11111111111|
 
-@pj
-  Scenario: Abertura de conta pessoa juridica
-And selecionar o botao abrir conta para sua empresa
-And selecionar o botao abrir conta pessoa unica 
-When preencher o formulario de abertura de conta
-And selecionar o botao enviar 
-Then sera exibido o texto Pronto
+
 
 
     
